@@ -2,7 +2,7 @@
 
 Forecast air temperature six hours ahead from the previous 24 hours of weather observations (MPI-BGC Jena roof station, 2018–2025). The project compares a persistence baseline with Dense and GRU networks that use temperature only or four inputs (temperature, pressure, humidity, wind speed), and includes an error analysis and a feature ablation study.
 
-All code is in `final_report.ipynb`. The report is `fp_final_Ping_Yuanhao.pdf` (submitted on Moodle).
+All code is in `final_project.ipynb`. The report is `fp_final_Ping_Yuanhao.pdf` (submitted on Moodle).
 
 ## Setup
 
@@ -18,7 +18,7 @@ The notebook downloads the weather data automatically from the MPI-BGC Jena weat
 
 ## How to run
 
-Open `final_report.ipynb` and choose **Run All**. The `RETRAIN` flag in section 1 controls the run mode:
+Open `final_project.ipynb` and choose **Run All**. The `RETRAIN` flag in section 1 controls the run mode:
 
 - `RETRAIN = True`: full run from scratch, including training and the feature ablation (about 45 minutes on a CPU).
 - `RETRAIN = False`: no training. Reloads the saved models in `models/` and the saved results in `outputs/` and redraws all tables and figures (about 2–3 minutes).
